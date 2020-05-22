@@ -1,0 +1,310 @@
+body{
+  margin: auto 0;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  background-color: #CBF1F5;
+  text-align: center;
+}
+
+.top-container{
+  height:180px;
+  line-height: 180px;
+}
+
+h1{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 5rem;
+  margin:0 auto;
+}
+
+.middle-container{
+  position:relative;
+}
+
+.sky{
+  background-color: #a6e3e9;
+  height: 280px;
+  position:relative;
+}
+
+.top-cloud{
+  position: absolute;
+  top:30%;
+  right: 15%;
+}
+
+.bottom-cloud{
+  position: absolute;
+  bottom:30%;
+  left: 15%;
+}
+
+.start-flag{
+  position: absolute;
+  bottom:0;
+  left:2%;
+  height:25%;
+}
+
+.finish-flag{
+  position: absolute;
+  bottom:0;
+  right:2%;
+  height:25%;
+}
+
+.road{
+  background-color: #888888;
+  height: 80px;
+  position:relative
+}
+
+.grass{
+  background-color: #17B978;
+  height: 60px;
+  position: relative;
+}
+
+.car{
+  width: 8%;
+  position:absolute;
+  top: 260px;
+  left: 10px;
+}
+
+.start-line{
+  border:none;
+  position: absolute;
+  height: 80px;
+  width: 12px;
+  left: 10%;
+  background-image: url("../images/start-line.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.finish-line{
+  border:none;
+  position: absolute;
+  height: 80px;
+  width: 12px;
+  right: 0;
+  background-image: url("../images/finish-line.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+
+.vl{
+  border-left: 6px dashed white;
+  height: 80px;
+  position: absolute;
+  top: 0;
+}
+
+.two-line{
+  left: 20%;
+}
+
+.three-line{
+  left: 30%;
+}
+
+.four-line{
+  left: 40%;
+}
+
+.five-line{
+  left: 50%;
+}
+
+.six-line{
+  left: 60%;
+}
+
+.seven-line{
+  left: 70%;
+}
+
+.eight-line{
+  left: 80%;
+}
+
+.nine-line{
+  left: 90%;
+}
+
+.btn{
+  position: absolute;
+  top:10px;
+  height: 40px;
+  width: 3.5%;
+  text-align:center;
+  line-height: 40px;
+}
+
+.random-letter{
+  background-color: #CBF1F5;
+  display: inline-block;
+  margin: 65px auto;
+  height: 150px;
+  width: 150px;
+  border: 6px solid white;
+  border-radius: 20%;
+  font-size:6rem;
+  line-height:150px;
+}
+
+.recorder{
+  position: absolute;
+  background-image:url("../images/recorder.png");
+  background-size: contain;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  top:90px;
+  right:35%;
+}
+
+.speaker{
+  position: absolute;
+  background-image:url("../images/speaker.png");
+  background-size: contain;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  top:120px;
+  right:40%;
+}
+
+.btn1{
+  left:13.5%;
+}
+
+.btn2{
+  left:23.5%;
+}
+
+.btn3{
+  left:33.5%;
+}
+
+.btn4{
+  left:43.5%;
+}
+
+.btn5{
+  left:53.5%;
+}
+
+.btn6{
+  left:63.5%;
+}
+
+.btn7{
+  left:73.5%;
+}
+
+.btn8{
+  left:83.5%;
+}
+
+.btn9{
+  left:93.5%;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #11999E;
+    border-width: 8px;
+    width: 5%;
+    margin: 0 auto;
+}
+
+
+h3{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1.5rem;
+  color: #11999E;
+
+}
+
+.copyright{
+  font-size:1rem;
+  color: #11999E;
+}
+
+.icon{
+  font-size:1rem;
+  color: #11999E;
+}
+
+a{
+  color: #11999E;
+  text-decoration: none;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.about-text{
+  margin: 70px auto;
+  font-size:1rem;
+  width: 60%;
+  text-align: left;
+  line-height: 2;
+}
+
+.racing-game{
+  width: 60%;
+  float:left;
+  margin-left:0;
+  margin-right:30px;
+}
+
+.content-text{
+  color:black;
+  font-size:1rem;
+}
+
+.hello-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color:#11999E;
+}
+
+.signature-text{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color:#11999E;
+}
+
+.how-text{
+  margin:70px auto;
+  width:60%;
+  text-align:left;
+}
+
+.back-to-home{
+  display: inline-block;
+  font-size:1.2rem;
+  font-family: 'Cabin Sketch', cursive;
+  color: #11999E;
+  position:absolute;
+  left:20px;
+  top:20px;
+}
+
+
+ol {
+  list-style-type: decimal;
+  line-height: 2;
+  color:#11999E ;
+}
