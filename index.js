@@ -50,7 +50,7 @@ $(document).keyup(function(event){
     default:
       break;
   }
-})
+});
 
 $(".speaker").click(function(e){
   animateFlash(".speaker");
@@ -61,7 +61,7 @@ $(".speaker").click(function(e){
   else{
     readOutLoud("Please click Enter for a letter");
   }
-})
+});
 
 function readOutLoud(letter) {
   var synth = window.speechSynthesis;
@@ -69,7 +69,7 @@ function readOutLoud(letter) {
   setTimeout(function(){
     var voices=synth.getVoices();
     console.log(voices);
-    msg.voice = voices[48];
+    msg.voice = voices[0];
     msg.pitch = 1;
     msg.rate = 1;
     synth.speak(msg);
