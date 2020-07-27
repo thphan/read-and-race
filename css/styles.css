@@ -53,13 +53,13 @@ h1{
   height:25%;
 }
 
-.road{
+#road{
   background-color: #888888;
   height: 80px;
-  position:relative
+  position:relative;
 }
 
-.grass{
+#grass{
   background-color: #17B978;
   height: 60px;
   position: relative;
@@ -102,7 +102,7 @@ h1{
   top: 0;
 }
 
-.two-line{
+/* .two-line{
   left: 20%;
 }
 
@@ -132,89 +132,44 @@ h1{
 
 .nine-line{
   left: 90%;
-}
+} */
 
-.btn{
+.pronounced-letter{
   position: absolute;
-  top:10px;
-  height: 40px;
   width: 3.5%;
   text-align:center;
-  line-height: 40px;
 }
 
+
 .random-letter{
+  position:absolute;
+  display:inline-block;
   background-color: #CBF1F5;
-  display: inline-block;
   margin: 65px auto;
   height: 150px;
   width: 150px;
   border: 6px solid white;
   border-radius: 20%;
-  font-size:6rem;
+  font-size:10vh;
   line-height:150px;
+  left: 43%;
+  z-index:1;
 }
 
-.recorder{
-  position: absolute;
-  background-image:url("../images/recorder.png");
-  background-size: contain;
-  border: 2px solid black;
-  border-radius: 50%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  top:90px;
-  right:35%;
-}
 
 .speaker{
-  position: absolute;
-  background-image:url("../images/speaker.png");
-  background-size: contain;
+  position:absolute;
+  display:inline-block;
   border: 2px solid black;
   border-radius: 50%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  top:120px;
-  right:40%;
+  height: 50px;
+  width: 50px;
+  top:40%;
+  right:38%;
 }
 
-.btn1{
-  left:13.5%;
-}
-
-.btn2{
-  left:23.5%;
-}
-
-.btn3{
-  left:33.5%;
-}
-
-.btn4{
-  left:43.5%;
-}
-
-.btn5{
-  left:53.5%;
-}
-
-.btn6{
-  left:63.5%;
-}
-
-.btn7{
-  left:73.5%;
-}
-
-.btn8{
-  left:83.5%;
-}
-
-.btn9{
-  left:93.5%;
+.fas{
+  padding-top:30%;
 }
 
 hr {
