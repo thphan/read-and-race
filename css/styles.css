@@ -6,17 +6,30 @@ body{
   text-align: center;
 }
 
-.top-container{
-  height:180px;
-  line-height: 180px;
-}
 
 h1{
   font-family: 'Cabin Sketch', cursive;
   font-size: 5rem;
-  margin:0 auto;
 }
 
+h3{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 1.5rem;
+  color: #11999E;
+}
+
+a{
+  color: #11999E;
+  text-decoration: none;
+}
+
+
+/* Top container styling */
+.main-title{
+  padding: 30px;
+}
+
+/* Middle container styling */
 .middle-container{
   position:relative;
 }
@@ -30,13 +43,48 @@ h1{
 .top-cloud{
   position: absolute;
   top:30%;
-  right: 15%;
+  right: 10%;
 }
 
 .bottom-cloud{
   position: absolute;
   bottom:30%;
-  left: 15%;
+  left: 10%;
+}
+
+
+.random-letter{
+  display:inline-block;
+  background-color: #CBF1F5;
+  margin: 65px auto;
+  height: 150px;
+  width: 150px;
+  border: 6px solid white;
+  border-radius: 20%;
+  font-size:10vh;
+  padding:10px;
+}
+
+.speaker-button{
+  display:inline-block;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left:15px;
+}
+
+.fas{
+  padding-top:30%;
+}
+
+
+/* Road styling */
+
+#road{
+  background-color: #888888;
+  height: 80px;
+  position:relative;
 }
 
 .start-flag{
@@ -53,18 +101,6 @@ h1{
   height:25%;
 }
 
-#road{
-  background-color: #888888;
-  height: 80px;
-  position:relative;
-}
-
-#grass{
-  background-color: #17B978;
-  height: 60px;
-  position: relative;
-}
-
 .car{
   width: 8%;
   position:absolute;
@@ -78,7 +114,7 @@ h1{
   height: 80px;
   width: 12px;
   left: 10%;
-  background-image: url("../images/start-line.jpg");
+  background-image: url("../images/finish-line.jpg");
   background-repeat: repeat;
   background-size: contain;
 }
@@ -94,7 +130,6 @@ h1{
   background-size: contain;
 }
 
-
 .vl{
   border-left: 6px dashed white;
   height: 80px;
@@ -102,37 +137,13 @@ h1{
   top: 0;
 }
 
-/* .two-line{
-  left: 20%;
-}
+/* Grass - pronounced letter styling */
 
-.three-line{
-  left: 30%;
+#grass{
+  background-color: #17B978;
+  height: 60px;
+  position: relative;
 }
-
-.four-line{
-  left: 40%;
-}
-
-.five-line{
-  left: 50%;
-}
-
-.six-line{
-  left: 60%;
-}
-
-.seven-line{
-  left: 70%;
-}
-
-.eight-line{
-  left: 80%;
-}
-
-.nine-line{
-  left: 90%;
-} */
 
 .pronounced-letter{
   position: absolute;
@@ -140,37 +151,6 @@ h1{
   text-align:center;
 }
 
-
-.random-letter{
-  position:absolute;
-  display:inline-block;
-  background-color: #CBF1F5;
-  margin: 65px auto;
-  height: 150px;
-  width: 150px;
-  border: 6px solid white;
-  border-radius: 20%;
-  font-size:10vh;
-  line-height:150px;
-  left: 43%;
-  z-index:1;
-}
-
-
-.speaker{
-  position:absolute;
-  display:inline-block;
-  border: 2px solid black;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  top:40%;
-  right:38%;
-}
-
-.fas{
-  padding-top:30%;
-}
 
 hr {
     border-style: none;
@@ -181,14 +161,6 @@ hr {
     margin: 0 auto;
 }
 
-
-h3{
-  font-family: 'Cabin Sketch', cursive;
-  font-size: 1.5rem;
-  color: #11999E;
-
-}
-
 .copyright{
   font-size:1rem;
   color: #11999E;
@@ -197,11 +169,6 @@ h3{
 .icon{
   font-size:1rem;
   color: #11999E;
-}
-
-a{
-  color: #11999E;
-  text-decoration: none;
 }
 
 .pressed {
@@ -262,4 +229,22 @@ ol {
   list-style-type: decimal;
   line-height: 2;
   color:#11999E ;
+}
+
+.check-button-area{
+  padding:20px;
+}
+
+.check-button{
+  display:none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .check-button{
+    display:inline-block;
+  }
+
+  .top-cloud,.bottom-cloud{
+    height:10%;
+  }
 }

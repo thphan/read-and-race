@@ -5,15 +5,20 @@
   <meta charset="utf-8">
   <title>Read and Race</title>
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Dancing+Script:wght@600&family=Muli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
   <script src="https://kit.fontawesome.com/329d9507ea.js" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="top-container">
-    <h1 id="main-title">🚗 Read and Race 🚗</h1>
+    <h1 class="main-title">🚗 Read and Race 🚗</h1>
   </div>
+
   <div class="middle-container">
     <div class="sky">
       <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
@@ -21,8 +26,8 @@
       <img class="start-flag" src="images/start-flag.png" alt="start-flag-img">
       <img class="finish-flag" src="images/finish-flag.png" alt="finish-flag-img">
       <div class="letter-area">
-        <div type="button" class="random-letter">❓</div>
-        <div type="button" class="speaker"><i class="fas fa-volume-up fa-lg"></i></div>
+        <div type="button" class="random-letter" onclick="updateRandomLetter()">❓</div>
+        <div type="button" class="speaker-button"><i class="fas fa-volume-up fa-lg"></i></div>
       </div>
     </div>
     <div id="road">
@@ -31,11 +36,22 @@
     </div>
     <img class="car" src="images/car.png" />
   </div>
+
+  <div class="check-button-area row">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <button type="button" class="check-button btn btn-danger btn-lg btn-block" onclick="updateWrongAnswer()">False</button>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <button type="button" class="check-button btn btn-success btn-lg btn-block" onclick="updateRightAnswer()">True</button>
+    </div>
+  </div>
+
   <div class="bottom-container">
     <h3><a href="aboutthegame.html">About the game</a> | <a href="howtoplay.html">How to play?</a> | <a href="mailto:thuongphan189@gmail.com">Contact me</a></h3>
     <p class="copyright">© 2020 Thuong Phan.</p>
     <p class="icon">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
 </body>

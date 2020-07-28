@@ -28,57 +28,28 @@ for (i = 0; i < 8; i++) {
   document.getElementById('grass').appendChild(element);
 }
 
+
 // keyboard control
 $(document).keyup(function(event){
   switch(event.which){
     case 13:
-      $(".random-letter").css("background-color","#CBF1F5");
-      animatePress(".random-letter");
-      randomLetter=getRandomLetter();
-      displayLetter(".random-letter");
-      $("#main-title").text("🤔 Please pronounce the letter!");
+      updateRandomLetter();
       break;
     case 37:
-      if (level>0){
-        $(".pronouned-letter"+level).text("");
-        level--;
-        moveBackward();
-      }
-      $(".random-letter").css("background-color","#c81912");
-      animateFlash(".random-letter");
-      playAudio("wrong.mp3");
-      $("#main-title").text("😞 Oh no ! Wrong answer! Please retry!");
+      updateWrongAnswer();
       break;
     case 39:
-      if (level<9){
-        level++;
-        moveForward();
-        animatePress(".pronounced-letter"+level);
-        displayLetter(".pronounced-letter"+level);
-        $(".random-letter").css("background-color","#79d70f");
-        animateFlash(".random-letter");
-        playAudio("right.mp3");
-        $("#main-title").text("😃 Yay ! It's correct!");
-      }
-      if (level===9){
-        $("#main-title").text("🥳 Congrats ! You Win!");
-      }
+      updateRightAnswer();
       break;
     case 82:
-      level=0;
-      randomLetter="";
-      $(".random-letter").css("background-color","#CBF1F5");
-      $(".car").css("left","10px");
-      $("#main-title").text("Press ⏎ to continue ...");
-      $(".pronounced-letter").text("");
-      $(".random-letter").text("❓");
+      resetGame();
       break;
     default:
       break;
   }
 });
 
-$(".speaker").click(function(e){
+$(".speaker-button").click(function(e){
   animateFlash(".speaker");
   var letter=$(".random-letter").text();
   if (letter!=="❓" && letter!==""){
@@ -88,6 +59,53 @@ $(".speaker").click(function(e){
     readOutLoud("Please click Enter for a letter");
   }
 });
+
+
+function updateRandomLetter(){
+  $(".random-letter").css("background-color","#CBF1F5");
+  animatePress(".random-letter");
+  randomLetter=getRandomLetter();
+  displayLetter(".random-letter");
+  $("#main-title").text("🤔 Please pronounce the letter!");
+}
+
+function updateWrongAnswer(){
+  if (level>0){
+    $(".pronouned-letter"+level).text("");
+    level--;
+    moveBackward();
+  }
+  $(".random-letter").css("background-color","#c81912");
+  animateFlash(".random-letter");
+  playAudio("wrong.mp3");
+  $("#main-title").text("😞 Oh no ! Wrong answer! Please retry!");
+}
+
+function updateRightAnswer(){
+  if (level<9){
+    level++;
+    moveForward();
+    animatePress(".pronounced-letter"+level);
+    displayLetter(".pronounced-letter"+level);
+    $(".random-letter").css("background-color","#79d70f");
+    animateFlash(".random-letter");
+    playAudio("right.mp3");
+    $("#main-title").text("😃 Yay ! It's correct!");
+  }
+  if (level===9){
+    $("#main-title").text("🥳 Congrats ! You Win!");
+  }
+}
+
+function resetGame(){
+  level=0;
+  randomLetter="";
+  $(".random-letter").css("background-color","#CBF1F5");
+  $(".car").css("left","10px");
+  $("#main-title").text("Press ⏎ to continue ...");
+  $(".pronounced-letter").text("");
+  $(".random-letter").text("❓");
+}
 
 function readOutLoud(letter) {
   var synth = window.speechSynthesis;
