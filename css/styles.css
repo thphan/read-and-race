@@ -52,29 +52,28 @@ a{
   left: 10%;
 }
 
-
-.random-letter{
-  display:inline-block;
-  margin-top:8vh;
-  background-color: #CBF1F5;
-  border: 6px solid white;
-  border-radius: 20%;
+.letter-area{
+  padding-top:8%;
 }
 
+.random-letter{
+  width:100px;
+  height:100px;
+  border-width:medium;
+}
+
+
 .random-letter-text{
-  padding:15px 40px;
-  font-size:160%;
+  margin-top:10px;
+  font-size:180%;
 }
 
 .speaker-button{
-  display:inline-block;
-  border: 2px solid black;
   border-radius: 50%;
-  margin-left:15px;
 }
 
 .fas{
-  margin:15px 10px;
+  margin:10px 0;
 }
 
 
