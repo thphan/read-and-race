@@ -50,7 +50,7 @@ $(document).keyup(function(event){
 });
 
 $(".speaker-button").click(function(e){
-  animateFlash(".speaker");
+  animateFlash(".speaker-button");
   var letter=$(".random-letter").text();
   if (letter!=="❓" && letter!==""){
     readOutLoud(letter);
@@ -71,7 +71,7 @@ function updateRandomLetter(){
 
 function updateWrongAnswer(){
   if (level>0){
-    $(".pronouned-letter"+level).text("");
+    $(".pronounced-letter"+level).text("");
     level--;
     moveBackward();
   }

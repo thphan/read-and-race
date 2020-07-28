@@ -55,8 +55,8 @@ a{
 
 .random-letter{
   display:inline-block;
+  margin-top:8vh;
   background-color: #CBF1F5;
-  margin: 65px auto;
   height: 150px;
   width: 150px;
   border: 6px solid white;
