@@ -51,8 +51,8 @@ $(document).keyup(function(event){
 
 $(".speaker-button").click(function(e){
   animateFlash(".speaker-button");
-  var letter=$(".random-letter").text();
-  if (letter!=="❓" && letter!==""){
+  var letter=$(".random-letter-text").text();
+  if (letter!=="?" && letter!==""){
     readOutLoud(letter);
   }
   else{
@@ -65,7 +65,7 @@ function updateRandomLetter(){
   $(".random-letter").css("background-color","#CBF1F5");
   animatePress(".random-letter");
   randomLetter=getRandomLetter();
-  displayLetter(".random-letter");
+  displayLetter(".random-letter-text");
   $("#main-title").text("🤔 Please pronounce the letter!");
 }
 
@@ -104,7 +104,7 @@ function resetGame(){
   $(".car").css("left","10px");
   $("#main-title").text("Press ⏎ to continue ...");
   $(".pronounced-letter").text("");
-  $(".random-letter").text("❓");
+  $(".random-letter-text").text("?");
 }
 
 function readOutLoud(letter) {

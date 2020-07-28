@@ -57,25 +57,24 @@ a{
   display:inline-block;
   margin-top:8vh;
   background-color: #CBF1F5;
-  height: 150px;
-  width: 150px;
   border: 6px solid white;
   border-radius: 20%;
-  font-size:10vh;
-  padding:10px;
+}
+
+.random-letter-text{
+  padding:15px 40px;
+  font-size:160%;
 }
 
 .speaker-button{
   display:inline-block;
   border: 2px solid black;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
   margin-left:15px;
 }
 
 .fas{
-  padding-top:30%;
+  margin:15px 10px;
 }
 
 
