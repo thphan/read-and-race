@@ -116,6 +116,7 @@ function readOutLoud(letter) {
     msg.voice = voices[0];
     msg.pitch = 1;
     msg.rate = 1;
+    msg.lang='en-US';
     synth.speak(msg);
   },10);
 
